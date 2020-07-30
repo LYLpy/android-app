@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_subject_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X年级语文上册人教版"
+            android:textSize="@dimen/sp20"
+            style="@style/marginleft_10dp"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_subject_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"/>
+        <LinearLayout
+            android:id="@+id/ll_vip_advert"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@drawable/bg_gold_stroke35"
+            android:layout_marginHorizontal="@dimen/dp20">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp20"
+                android:text="会员免费"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/dp30"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp15"
+                android:text="充值VIP更多超值礼物。"
+                android:layout_marginLeft="@dimen/dp5"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <TextView
+            android:text="授课老师"
+            android:textSize="@dimen/sp15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/marginleft_10dp"
+            android:layout_marginTop="@dimen/dp10"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_teacher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="课程试看"
+            android:textSize="@dimen/sp15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/marginleft_10dp"
+            android:layout_marginTop="@dimen/dp10"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:background="@color/bg_gray2"/>
+    </LinearLayout>
+
+</LinearLayout>

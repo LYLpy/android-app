@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dp135"
+    android:layout_marginHorizontal="@dimen/dp5"
+    android:background="@drawable/selector_price">
+
+    <TextView
+        android:id="@+id/tv_first_month_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_gray6"
+        android:padding="@dimen/dp5"
+        android:text="首月特惠"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp10"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/ic_discount"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/dp56"
+        android:layout_height="wrap_content"
+
+        >
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_discount"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_discount_text"
+            android:layout_centerInParent="true"
+            android:textColor="@color/base_color"
+            android:textSize="@dimen/dp10"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_months"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1个月"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp15" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_price_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp5"
+                android:text="¥"
+                android:textColor="@color/red_deep"
+                android:textSize="@dimen/sp15" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XX"
+                android:textColor="@color/red_deep"
+                android:textSize="@dimen/sp25"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_original_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:text="¥100"
+            android:textColor="@color/bg_gray_999"
+            android:textSize="@dimen/sp15" />
+    </LinearLayout>
+</RelativeLayout>

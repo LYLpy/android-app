@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_10"
+    android:padding="10dp"
+    android:layout_marginTop="@dimen/dp5">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/dp100"
+        android:layout_height="@dimen/dp100"
+        android:scaleType="fitXY"
+        android:src="@drawable/img01"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_333"
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold"
+            android:lines="2"
+            android:lineSpacingExtra="@dimen/dp5"
+            android:text="X年级奥数上册"/>
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="课时：XX"/>
+
+        <TextView
+            android:id="@+id/views_search_lv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:gravity="center"
+            android:text="XXXXX人已学习"/>
+
+    </LinearLayout>
+
+</LinearLayout>

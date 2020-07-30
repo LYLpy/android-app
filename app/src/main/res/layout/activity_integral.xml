@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/base_color"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/integral_title"></include>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:layout_gravity="bottom"/>
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/spring_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:background="@color/witch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp70">
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:id="@+id/tv_integral_title"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="我的积分:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp18" />
+        <TextView
+            android:id="@+id/tv_integrals"
+            android:gravity="center_vertical"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:text="XXX"
+            android:layout_toRightOf="@id/tv_integral_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_my_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="我的礼品"
+            android:paddingVertical="@dimen/dp10"
+            android:paddingHorizontal="@dimen/dp20"
+            android:background="@drawable/bg_yellow_selector2"
+            android:textColor="@color/white"
+            android:layout_marginRight="@dimen/dp10"
+            android:textSize="@dimen/sp15" />
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:paddingHorizontal="@dimen/dp5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+</com.liaoinstan.springview.widget.SpringView>
+</LinearLayout>

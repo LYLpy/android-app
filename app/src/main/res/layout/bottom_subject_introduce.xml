@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp10">
+    <TextView
+        android:text="课程介绍"
+        style="@style/style_title_home"
+        android:textSize="@dimen/sp18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp25"/>
+    <TextView
+        android:id="@+id/tv_subject_introduce"
+        android:text="我我我我我"
+        android:textSize="@dimen/sp15"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"/>
+    <ImageView
+        android:id="@+id/iv_subject_introduce"
+        android:src="@drawable/subject_introduce"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:scaleType="fitXY"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

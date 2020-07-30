@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/base_color">
+
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/spring_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_color"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/witch"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/img_my_bg_top" />
+
+                        <ImageView
+                            android:id="@+id/iv_icon"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="@dimen/dp20"
+                            android:layout_marginTop="@dimen/dp90"
+                            android:src="@drawable/img_user" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_personal_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/iv_icon"
+                            android:layout_marginLeft="@dimen/dp20"
+                            android:layout_marginTop="6dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_nick_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="昵称"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sp22"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_signature"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp3"
+                                android:maxLines="25"
+                                android:text="好好学习,天天向上"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btn_sign"
+                            android:layout_width="@dimen/dp80"
+                            android:layout_height="@dimen/dp35"
+                            android:layout_alignTop="@+id/ll_personal_info"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dp20"
+                            android:background="@drawable/bg_yellow_selector4"
+                            android:text="签到"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_challenge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/witch"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/dp10"
+                        android:paddingBottom="@dimen/dp20">
+
+                        <LinearLayout
+                            android:id="@+id/ll_study_day"
+                            style="@style/style_challenge_linear">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom|center_horizontal"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_study_day"
+                                    style="@style/style_challenge_text"
+                                    android:text="X"
+                                    android:textColor="@color/blue5" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" 天" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="坚持学习"
+                                android:textColor="@color/black_333" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_challenge_day"
+                            style="@style/style_challenge_linear">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom|center_horizontal"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_challenge_day"
+                                    style="@style/style_challenge_text"
+                                    android:text="X"
+                                    android:textColor="@color/blue5" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" 个" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="完成挑战"
+                                android:textColor="@color/black_333" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_integral"
+                            style="@style/style_challenge_linear">
+
+                            <TextView
+                                android:id="@+id/tv_integral"
+                                style="@style/style_challenge_text"
+                                android:text="X"
+                                android:textColor="@color/blue5" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="全部积分"
+                                android:textColor="@color/black_333" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_invitation"
+                        style="@style/style_vip_advert_btn"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginHorizontal="@dimen/dp20"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginBottom="@dimen/dp20"
+                        android:background="@drawable/btn_selector_gold_35"
+                        android:text="开通VIP，畅爽全场"
+                        android:textColor="@color/black_gold"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/witch"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_invitation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_bg"
+                        android:visibility="gone">
+
+                        <LinearLayout style="@style/style_linear">
+
+                            <ImageView
+                                style="@style/style_mine_icon"
+                                android:src="@drawable/ic_my_invitation" />
+
+                            <TextView
+                                style="@style/style_mine_item_text_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="邀请好友" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="right|center_vertical">
+
+                                <ImageView
+                                    style="@style/style_1"
+                                    android:src="@drawable/icon_arrow" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:background="@color/bg_gray2" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_vip_center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_bg">
+
+                        <LinearLayout style="@style/style_linear">
+
+                            <ImageView
+                                style="@style/style_mine_icon"
+                                android:src="@drawable/vip_center_icon" />
+
+                            <TextView
+                                style="@style/style_mine_item_text_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="会员中心" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="right|center_vertical">
+
+                                <ImageView
+                                    style="@style/style_1"
+                                    android:src="@drawable/icon_arrow" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:background="@color/bg_gray2" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_my_order"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_bg">
+
+                        <LinearLayout style="@style/style_linear">
+
+                            <ImageView
+                                style="@style/style_mine_icon"
+                                android:src="@drawable/my_order_icon" />
+
+                            <TextView
+                                style="@style/style_mine_item_text_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="我的订单" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="right|center_vertical">
+
+                                <ImageView
+                                    style="@style/style_1"
+                                    android:src="@drawable/icon_arrow" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:background="@color/bg_gray2" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_my_collect"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_bg">
+
+                        <LinearLayout style="@style/style_linear">
+
+                            <ImageView
+                                style="@style/style_mine_icon"
+                                android:src="@drawable/my_cellect_icon" />
+
+                            <TextView
+                                style="@style/style_mine_item_text_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="我的收藏" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="right|center_vertical">
+
+
+                                <ImageView
+                                    style="@style/style_1"
+                                    android:src="@drawable/icon_arrow" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:background="@color/bg_gray2" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_coupon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_bg">
+
+                        <LinearLayout style="@style/style_linear">
+
+                            <ImageView
+                                style="@style/style_mine_icon"
+                                android:src="@drawable/coupon_icon" />
+
+                            <TextView
+                                style="@style/style_mine_item_text_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="优惠券" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="right|center_vertical">
+
+
+                                <ImageView
+                                    style="@style/style_1"
+                                    android:src="@drawable/icon_arrow" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:background="@color/bg_gray2" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_exchange_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_bg">
+
+                        <LinearLayout style="@style/style_linear">
+
+                            <ImageView
+                                style="@style/style_mine_icon"
+                                android:layout_width="wrap_content"
+                                android:src="@drawable/ic_exchange" />
+
+                            <TextView
+                                style="@style/style_mine_item_text_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="兑换码" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="right|center_vertical">
+
+
+                                <ImageView
+                                    style="@style/style_1"
+                                    android:src="@drawable/icon_arrow" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_customer_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:background="@color/witch"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/call_center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_bg">
+
+                        <LinearLayout style="@style/style_linear">
+
+                            <ImageView
+                                style="@style/style_mine_icon"
+                                android:src="@drawable/custom_server_center_icon" />
+
+                            <TextView
+                                style="@style/style_mine_item_text_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="客服中心" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="right|center_vertical">
+
+                                <ImageView
+                                    style="@style/style_1"
+                                    android:src="@drawable/icon_arrow" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:background="@color/bg_gray2" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_bg"
+                        android:orientation="horizontal">
+
+                        <LinearLayout style="@style/style_linear">
+
+                            <ImageView
+                                style="@style/style_mine_icon"
+                                android:src="@drawable/setting_icon" />
+
+                            <TextView
+                                style="@style/style_mine_item_text_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="设置" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="right|center_vertical">
+
+                                <ImageView
+                                    style="@style/style_1"
+                                    android:src="@drawable/icon_arrow" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </com.liaoinstan.springview.widget.SpringView>
+</FrameLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50">
+        <!--搜索栏-->
+        <RelativeLayout
+            android:id="@+id/rl_main_title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp10"
+                android:text="格灵教育"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp19"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_vertical_divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_toRightOf="@+id/tv_company"
+                android:text="|"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_current_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_toRightOf="@+id/tv_vertical_divider"
+                android:text="X年级"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp14" />
+
+            <ImageView
+                android:id="@+id/iv_show_popup"
+                android:layout_width="@dimen/dp20"
+                android:layout_height="@dimen/dp20"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_current_grade"
+                android:paddingHorizontal="@dimen/dp5"
+                android:paddingTop="@dimen/dp6"
+                android:src="@drawable/ic_courseselection_dropdownselector" />
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="@dimen/dp36"
+                android:layout_height="@dimen/dp36"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_marginBottom="10dp"
+                android:padding="@dimen/dp5"
+                android:src="@drawable/ic_home_search" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp30">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rectangle_stroke_gray2_coner10"
+    android:paddingVertical="@dimen/dp10"
+    android:layout_marginTop="@dimen/dp10">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp70">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_subject_label"
+                    android:text="语"
+                    android:textSize="@dimen/sp10"
+                    android:paddingHorizontal="@dimen/dp5"
+                    android:paddingVertical="@dimen/dp2"
+                    android:background="@drawable/bg_red_my_study"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:text="XX年级语文上册人教版"
+                    android:textSize="@dimen/sp16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black_333"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_end_time"
+                android:text="截止：20XX年XX月XX日"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_is_complete"
+            android:text="未完成"
+            android:background="@drawable/btn_selector7"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp10"
+            android:textSize="@dimen/sp13"
+            android:paddingVertical="@dimen/dp10"
+            android:paddingHorizontal="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp5"/>
+
+</RelativeLayout>

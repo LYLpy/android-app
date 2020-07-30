@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="net.getlearn.getlearn_android">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Glide可以监听用户的连接状态并在用户重新连接到网络时重启之前失败的请求 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 用于硬盘缓存和读取 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> -->
+    <!-- 调用相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/> -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 保存Bitmap到本地所需权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUN_FILESYSTEMS" />
+
+    <application
+        android:name=".MainApp"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:resizeableActivity="false"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:name">
+        <activity android:name=".xxtapi.XXTEntryActivity"></activity>
+        <!-- <activity android:name=".fragment.main.fragmentHome.HomeFragment2"></activity> -->
+        <!-- 视频全面屏适配 -->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.4" />
+
+        <activity android:name=".activity.AoePPTActivity" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.ChallengeCenterActivity" />
+        <activity android:name=".activity.MyCollectActivity" />
+        <activity android:name=".activity.SelectGradeActivity" />
+        <activity android:name=".activity.SelectVersionActivity" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:windowSoftInputMode="stateVisible" />
+        <activity android:name=".activity.SearchResultActivity" />
+        <activity android:name=".activity.CustomerServiceCenterActivity" />
+        <activity android:name=".activity.CreateStudyPlanActivity" />
+        <activity android:name=".activity.RemindSettingActivity" />
+        <activity android:name=".activity.CouponActivity" />
+        <activity android:name=".activity.GetVerificationCodeActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.CompleteRegisterActivity" />
+        <activity android:name=".activity.StudyKeyActivity" />
+        <activity android:name=".activity.SyncSubjectActivity" />
+        <activity android:name=".activity.FamousTeacherActivity" />
+        <activity android:name=".activity.FamousTeacherIntroductionActivity" /> <!-- android:configChanges="orientation|keyboardHidden|screenSize" -->
+        <activity
+            android:name=".activity.VideoPlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity android:name=".activity.SettingActivity" />
+        <activity android:name=".activity.OpinonActivity" />
+        <activity android:name=".activity.ReadActivity" />
+        <activity android:name=".activity.StudyPlanActivity" />
+        <activity android:name=".activity.MyStudyActivity" />
+        <activity android:name=".activity.VipCenterActivity" />
+        <activity android:name=".activity.ExchallgeCenterActivity" />
+        <activity android:name=".activity.UserInfoActivity" />
+        <activity android:name=".activity.EditNicknameActivity" />
+        <activity android:name=".activity.EditPhoneActivity" />
+        <activity android:name=".activity.EditSignatureActivity" />
+        <activity android:name=".activity.MyFeedbackListActivity" />
+        <activity android:name=".activity.MyFeedbackMsgActivity" />
+        <activity android:name=".activity.SecretProtocolActivity" />
+        <activity android:name=".activity.UserProtocolActivity" />
+        <activity android:name=".activity.webview.WebViewActivity" />
+        <activity android:name=".activity.MyOrderActivity" />
+        <activity android:name=".activity.SignRuleActivity" />
+        <activity android:name=".activity.webview.InvitationWebViewActivity" />
+        <activity android:name=".activity.MyGiftActivity" />
+        <activity android:name=".activity.OrderDetailActivity" />
+        <activity android:name=".activity.SelectCouponActivity" />
+        <activity android:name=".activity.ExchangeCodeActivity" />
+        <activity android:name=".activity.ExchangeCodeSuccessActivity" />
+        <activity android:name=".activity.ExchangeRecordsActivity" /> <!-- 投屏界面，设置横屏 -->
+        <activity
+            android:name=".activity.ThrScreenActivity"
+            android:screenOrientation="landscape" />
+
+        <service android:name=".service.NotifyPlanService" />
+
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.StudyPlanActivity2"
+            android:launchMode="singleTask" /> <!-- 支付宝H5界面 -->
+        <!-- <activity -->
+        <!-- android:name="com.alipay.sdk.app.H5PayActivity" -->
+        <!-- android:configChanges="orientation|keyboardHidden|navigation" -->
+        <!-- android:exported="false" -->
+        <!-- android:screenOrientation="behind" -->
+        <!-- android:windowSoftInputMode="adjustResize|stateHidden" > -->
+        <!-- </activity> -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:taskAffinity="net.sourceforge.simcpux"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- 友盟统计配置Appkey与Channel -->
+        <!-- value的值填写你在友盟后台申请的应用Appkey -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5d832f780cafb227fc0010c6" /> <!-- value的值填写渠道名称，例如yingyongbao,这里设置动态渠道变量 -->
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+
+
+    </application>
+
+</manifest>

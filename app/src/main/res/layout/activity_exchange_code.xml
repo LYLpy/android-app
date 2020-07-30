@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBarSize"
+        android:background="@color/witch">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/iv_back_margin_left"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp15"
+            android:src="@drawable/ic_back_black" />
+
+        <TextView
+            style="@style/style_tool_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:text="兑换码" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/witch"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/dp50"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/witch"
+            android:hint="请输兑换码" />
+
+        <ImageView
+            android:id="@+id/iv_clean_edit"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp15"
+            android:src="@drawable/btn_my_personinformation_backspace"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginHorizontal="@dimen/dp10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_exchange_mag"
+            android:textColor="@color/grey"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="请输入总换码"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btn_exchange_code"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:background="@drawable/selectot_button_blue"
+            android:text="立即兑换"
+            android:textSize="@dimen/sp16"
+            android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/tv_exchange_records"
+            android:layout_marginTop="@dimen/dp22"
+            android:gravity="center"
+            android:textSize="@dimen/dp18"
+            android:text="兑换记录>"
+            android:textColor="@color/bg_bule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

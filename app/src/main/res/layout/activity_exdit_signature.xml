@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_edit_signatrue" />
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/dp50"
+            android:layout_marginLeft="18dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/witch"
+            android:hint="请输入昵称"
+            android:maxLength="16"/>
+        <ImageView
+            android:id="@+id/iv_clean_edit"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp15"
+            android:src="@drawable/btn_my_personinformation_backspace"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20" />
+
+    </RelativeLayout>
+
+
+        <TextView
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="不超过16个字"
+            android:textColor="@color/grey"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_marginHorizontal="@dimen/dp10"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:background="@drawable/selectot_button_blue"
+            android:text="保存"
+            android:textSize="@dimen/sp16"
+            android:textColor="@color/witch" />
+
+
+</LinearLayout>

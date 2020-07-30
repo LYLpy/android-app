@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">格灵同步培优</string>
+    <string-array name="tab_names">
+        <item>未使用</item>
+        <item>已使用</item>
+        <item>已过期</item>
+    </string-array>
+
+    <string-array name="tab_video_play">
+        <item>课程介绍</item>
+        <item>课程目录</item>
+        <item>学员评论</item>
+    </string-array>
+
+    <string-array name="tab_my_order">
+        <item>全部</item>
+        <item>已付款</item>
+        <item>待付款</item>
+    </string-array>
+
+    <string-array name="tab_my_collect">
+        <item>全部</item>
+        <item>语文</item>
+        <item>数学</item>
+        <item>英语</item>
+    </string-array>
+    <!--微信相关-->
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unsupported">不支持错误</string>
+    <string name="errcode_unknown">发送返回</string>
+
+    <string name="longin">用户</string>
+    <string name="user">用户名</string>
+    <string name="pwd">密码</string>
+    <string name="password">输入密码</string>
+    <string name="qq">qq</string>
+    <string name="wx">微信</string>
+    <string name="yh">用户协义</string>
+    <string name="bm">保密协议</string>
+    <string name="n1">一年纪</string>
+    <string name="gx">1.0</string>
+
+    <string name="sign_rule">
+1、登录用户每天可签到1次，并领取奖励。\n
+2、连续签到天数越长，获得的奖励越多。若连续签到中断，则重新计算天数。\n
+3、每连续签到7天，将额外获得奖励。\n
+4、如果出现用户违规行为，有权立即终止其签到。
+</string>
+
+    <!--<b><font ><big>方案一:-->
+    <!--</big></font></b>-->
+    <!--<br>-->
+    <!--10积分兑换5元优惠券(限月卡使用)<br>-->
+    <!--10积分兑换10元优惠券(限季卡使用)<br>-->
+    <!--10积分兑换30元优惠券(限年卡使用)<br>-->
+    <!--注:一笔订单只能使用一张优惠券<br><br>-->
+    <string name="integral_consume">
+
+
+<![CDATA[
+    <b><font ><big>方案一:
+       </big></font></b>
+       <br>
+    10积分兑换5元优惠券<br>
+    30积分兑换10元优惠券<br>
+    50积分兑换15元优惠券<br>
+    注:一笔订单只能使用一张优惠券
+    <br>
+    更多福利，敬请期待！
+    ]]>
+
+</string>
+    <string name="quick_access_staying_offline_content"><![CDATA[To watch <b><font>12,000+ movies, shows</font>
+    </b> and more videos, please connect to the internet.]]></string>
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

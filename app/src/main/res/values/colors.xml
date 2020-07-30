@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="red_deep">#fc3333</color>
+    <color name="green1">#35ca02</color>
+    <color name="light_yellow">#ffb94e</color>
+    <color name="yellow">#ff9a02</color>
+
+    <!--app基色-->
+    <color name="base_color">#f3f7f8</color>
+    <color name="color_search_bg">#d3e8ec</color>
+    <color name="white">#ffffffff</color>
+    <color name="grey1">#808080</color>
+    <color name="dialog_bg">#FFFFFF</color>
+    <!--半透明灰色-->
+    <color name="bg_gray_translucent">#aa3b3b3b</color>
+    <color name="bg_gray">#f9fdfdfd</color>
+    <color name="bg_gray0">#f9fafafa</color>
+    <color name="bg_gray1">#f9f2f1f1</color>
+    <color name="bg_gray2">#f6f6f6</color>
+    <color name="bg_gray9">#ececec</color>
+    <color name="bg_gray3">#f9d1cfcf</color>
+    <color name="bg_gray4">#f99f9f9f</color>
+    <color name="bg_gray5">#f97c7b7b</color>
+    <color name="bg_gray6">#f9545353</color>
+    <color name="bg_gray7">#f93b3b3b</color>
+    <color name="bg_gray8">#7bacacac</color>
+    <color name="bg_gray10">#F2F2F2</color>
+    <color name="bg_gray_999">#999</color>
+    <color name="bg_bule">#0A9DE6</color>
+    <color name="bg_bule1">#81CBF2</color>
+
+    <!--半透明灰色-->
+    <color name="translucent_gray1">#66acacac</color>
+    <color name="translucent_gray2">#779f9f9f</color>
+    <color name="blue_light">#6be7d5</color>
+    <color name="blue_deep">#4ebaff</color>
+    <color name="blue0">#ebf2ff</color>
+    <color name="blue1">#e5eeff</color>
+    <color name="blue3">#b7cef4</color>
+    <color name="blue4">#5c9afa</color>
+    <color name="blue5">#2c7fff</color>
+    <color name="blue6">#2d80ff</color>
+
+    <color name="purple">#ae93ff</color>
+    <color name="gold">#f1dca6</color>
+    <color name="light_gold">#f9e7b9</color>
+    <color name="grey">#FF615B5B</color>
+    <color name="backg">#FFEAF1FF</color>
+    <color name="witch">#FFFFFFFF</color>
+
+<!--Alertdialog相关-->
+    <color name="black">#000000</color>
+    <!--黑金色-->
+    <color name="black_gold">#5b4917</color>
+    <color name="black_333">#333</color>
+    <color name="black_999">#999</color>
+    <!--首页热门的红色-->
+    <color name="hot_red_home">#c90202</color>
+    <color name="green_subject_home">#a8dd34</color>
+    <color name="blue_subject_home">#3ed4bf</color>
+    <color name="red_subject_home">#ff6e6e</color>
+    <color name="limpid">#00000000</color>
+    <color name="line_default_color">#e5e5e5</color>
+    <color name="action_sheet_blue">#037BFF</color>
+
+
+    <!-- 水鸭色 -->
+    <color name="green">#008000</color>
+    <!-- 花白色 -->
+    <color name="lemonchiffon">#FFFACD</color>
+    <!-- 西红柿色 -->
+    <color name="orangered">#FF4500</color>
+    <!-- 印第安红 -->
+    <color name="mediumvioletred">#C71585</color>
+    <!-- 苍麒麟色 -->
+    <color name="violet">#EE82EE</color>
+    <!-- 浅灰蓝色 -->
+    <color name="btnblue">#3495F9</color>
+    <!-- 暗紫罗兰色 -->
+    <color name="mediumpurple">#9370DB</color>
+    <!-- 暗灰色 -->
+    <color name="mediumaquamarine">#66CDAA</color>
+    <!-- 海绿色 -->
+    <color name="forestgreen">#228B22</color>
+
+    <color name="calendartextcor0">#999999</color>
+    <color name="mcv_text_date_light">#000000</color> <!-- 黑色 -->
+
+    <color name="VIP">#FFF1DCA4</color>
+    <color name="blue">#FF2D80FF</color>
+    <color name="blue2">#FFAFCEFA</color>
+</resources>

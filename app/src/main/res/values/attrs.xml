@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <declare-styleable name="CollapsibleTextView">
+    <attr name="suffixColor" format="color"/>
+    <attr name="collapsedLines" format="integer"/>
+    <attr name="collapsedText" format="string"/>
+    <attr name="expandedText" format="string"/>
+    <attr name="suffixTrigger" format="boolean"/>
+  </declare-styleable>
+
+  <declare-styleable name="ExpandableTextView">
+    <attr name="trimLength" format="integer" />
+  </declare-styleable>
+
+
+  <declare-styleable name="ExtendedListView">
+    <attr name="scrollBarPanel" format="reference" />
+    <attr name="scrollBarPanelInAnimation" format="reference" />
+    <attr name="scrollBarPanelOutAnimation" format="reference" />
+  </declare-styleable>
+  <declare-styleable name="Rotate3dAnimation">
+    <attr name="rollType" format="enum">
+      <enum name="x" value="0" />
+      <enum name="y" value="1" />
+      <enum name="z" value="2" />
+    </attr>
+    <attr name="fromDeg" format="float" />
+    <attr name="toDeg" format="float" />
+    <attr name="pivotX" format="fraction" />
+    <attr name="pivotY" format="fraction" />
+  </declare-styleable>
+
+  <declare-styleable name="CircleProgressView">
+    <!--画笔宽度-->
+    <attr name="progress_width" format="dimension" />
+    <!--画笔颜色-->
+    <attr name="progress_color" format="color" />
+    <!--加载进度起始位置-->
+    <attr name="location_start" format="enum">
+      <enum name="left" value="1" />
+      <enum name="top" value="2" />
+      <enum name="right" value="3" />
+      <enum name="bottom" value="4" />
+    </attr>
+    <!--1表示顺时针，0表示逆时针-->
+    <attr name="direction" format="integer">
+      <enum name="clockwise" value="1" />
+      <enum name="counterclockwise" value="-1" />
+    </attr>
+  </declare-styleable>
+
+    //=====================MaterialCalendarView====================
+  <declare-styleable name="MaterialCalendarView">
+
+    <attr name="mcv_dateTextAppearance" format="reference"/>
+    <attr name="mcv_weekDayTextAppearance" format="reference"/>
+    <attr name="mcv_headerTextAppearance" format="reference"/>
+
+    <attr name="mcv_arrowColor" format="color"/>
+    <attr name="mcv_leftArrowMask" format="reference"/>
+    <attr name="mcv_rightArrowMask" format="reference"/>
+    <attr name="mcv_selectionColor" format="color"/>
+
+    <attr name="mcv_showOtherDates" format="integer">
+      <flag name="none" value="0" />
+      <flag name="other_months" value="1" />
+      <flag name="out_of_range" value="2" />
+      <flag name="decorated_disabled" value="4" />
+      <flag name="defaults" value="4" />
+      <flag name="all" value="7" />
+    </attr>
+
+    <attr name="mcv_weekDayLabels" format="reference" />
+    <attr name="mcv_monthLabels" format="reference" />
+
+    <attr name="mcv_tileSize" format="dimension"/>
+
+    <attr name="mcv_firstDayOfWeek" format="enum">
+      <enum name="sunday" value="1" />
+      <enum name="monday" value="2" />
+      <enum name="tuesday" value="3" />
+      <enum name="wednesday" value="4" />
+      <enum name="thursday" value="5" />
+      <enum name="friday" value="6" />
+      <enum name="saturday" value="7" />
+    </attr>
+
+  </declare-styleable>
+
+  <!--loading dialoag-->
+  <declare-styleable name="SpinnerLoader">
+    <attr name="point_color" format="color" />
+    <attr name="isdynamic" format="boolean" />
+  </declare-styleable>
+  //=====================MaterialCalendarView====================
+</resources>

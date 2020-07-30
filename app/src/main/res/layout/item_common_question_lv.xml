@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_title_common_question"
+        android:text="一、课程进度如何安排?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/action_sheet_blue"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"/>
+    <TextView
+        android:id="@+id/tv_content_common_question"
+        android:text="根据小学生教学大纲的时间安排教学进度，有时学校内的课程安排时间可能不完全一致"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bg_gray5"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:paddingRight="10dp"
+        android:textSize="16sp"/>
+</LinearLayout>

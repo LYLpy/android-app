@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--圆形按钮-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--圆形按钮mouse_out-->
+    <item>
+        <shape android:shape="rectangle" ><!--矩形类型-->
+        <corners android:radius="5dp"/><!--定义圆角-->
+            <solid android:color="@color/dialog_bg" />  <!--填充的颜色-->
+        </shape>
+    </item>  
+
+</layer-list>

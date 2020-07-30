@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBarSize"
+        android:background="@color/witch">
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/ll_back"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="match_parent">
+
+            <ImageView
+
+                style="@style/iv_back_margin_left"
+                android:layout_width="@dimen/dp20"
+                android:layout_height="@dimen/dp20"
+
+                android:src="@drawable/ic_back_black" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/style_tool_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:text="兑换码" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_text"
+            android:gravity="center"
+            android:text="没有兑换记录"
+            android:textColor="@color/bg_gray7"
+            android:textSize="@dimen/dp25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/rv_exchange_recorde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+
+</LinearLayout>
